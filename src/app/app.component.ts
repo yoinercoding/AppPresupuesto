@@ -25,7 +25,7 @@ export class AppComponent {
     getIngresoTotal() {
       let ingresoTotal:number=0;
       this.ingresos.forEach(ingreso => {
-        ingresoTotal =+ ingreso.valor;
+        ingresoTotal += ingreso.valor;
       });
       return ingresoTotal;
     }
@@ -34,14 +34,14 @@ export class AppComponent {
     getEgresoTotal() {
       let egresoTotal:number=0;
       this.egresos.forEach(egreso => {
-        egresoTotal =+ egreso.valor;
+        egresoTotal += egreso.valor;
       });
       return egresoTotal;
     }
 
     //METODO OBTENEMOS EL PORCENTAJE TOTAL
     getPorcentajeTotal(){
-      return this.getEgresoTotal()/this.getIngresoTotal();
+      return this.getEgresoTotal() / this.getIngresoTotal();
     }
 
     //METODO OBTENEMOS PRESUPUESTO TOTAL
