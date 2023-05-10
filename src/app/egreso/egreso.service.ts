@@ -3,8 +3,12 @@ import { Egreso } from "./egreso.model";
 export class EgresoService{
    
         egresos:Egreso[]=[
-        new Egreso("Resta Depto", 900),
-        new Egreso("Ropa", 200)
+        new Egreso("Alquiler", 2000),
+        new Egreso("Ropa", 200),
+        new Egreso("Mercado", 900),
+        new Egreso("Prepaga", 600),
+        new Egreso("Gasolina", 500),
+        new Egreso("Entretenimiento", 250)
     ];
 
     //METODO ELIMINAR
