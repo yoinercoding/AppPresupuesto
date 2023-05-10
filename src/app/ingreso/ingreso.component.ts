@@ -4,8 +4,7 @@ import { IngresoService } from './ingreso.service';
 
 @Component({
   selector: 'app-ingreso',
-  templateUrl: './ingreso.component.html',
-  styleUrls: ['./ingreso.component.css']
+  templateUrl: './ingreso.component.html'
 })
 export class IngresoComponent implements OnInit {
 

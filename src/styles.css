@@ -20,8 +20,8 @@ body {
 }
 
 .right { float: right; }
-.red { color: #FF5049 !important; }
-.redfocus:focus { border: 1px solid #FF5049 !important; }
+.red { color: #fb0505 !important; }
+.redfocus:focus { border: 1px solid #550001 !important; }
 
 .cabecero {
     height: 40vh;
@@ -32,9 +32,9 @@ body {
     padding-top: 150px;
     padding-bottom: 100px;
     color: #fff;
-    background: url(assets/bg-pattern.png), #7b4397;
-    background: url(assets/bg-pattern.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-    background: url(assets/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430)
+    background: url(assets/fondo.png), #111111;
+    background: url(assets/fondo.png), -webkit-gradient(linear, right top, left top, from(#2f319c), to(#380105));
+    background: url(assets/fondo.png), linear-gradient(to left, #313331, #2446dc)
 }
 
 .presupuesto {
@@ -47,7 +47,7 @@ body {
 }
 
 .presupuesto_titulo{
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 300;
@@ -231,7 +231,7 @@ h2 {
 .egreso .elemento_valor,
 .egreso .elemento_porcentaje,
 .egreso .elemento_eliminar--btn {
-    color: #FF5049;
+    color: #f50800;
 }
 
 

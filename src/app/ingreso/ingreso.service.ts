@@ -2,12 +2,7 @@ import { Ingreso } from "./ingreso.model";
 
 export class IngresoService{
     
-        ingresos:Ingreso[]=[
-        new Ingreso("Salario", 8000),
-        new Ingreso("Dividendos", 1000),
-        new Ingreso("Pequeños trabajos", 500),
-        new Ingreso("Otros", 500)
-    ];
+        ingresos:Ingreso[]=[];
     
     //METODO ELIMINAR
     eliminar(ingreso:Ingreso){

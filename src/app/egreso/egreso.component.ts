@@ -4,14 +4,14 @@ import { EgresoService } from './egreso.service';
 
 @Component({
   selector: 'app-egreso',
-  templateUrl: './egreso.component.html',
-  styleUrls: ['./egreso.component.css']
+  templateUrl: './egreso.component.html'
 })
+
 export class EgresoComponent implements OnInit {
 
   egresos:Egreso[]=[];
  
-  @Input() ingresoTotal:number;
+  @Input() ingresoTotal:number=0;
 
   constructor(private egresoService:EgresoService) { }
 

@@ -6,14 +6,13 @@ import { IngresoService } from '../ingreso/ingreso.service';
 
 @Component({
   selector: 'app-formulario',
-  templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  templateUrl: './formulario.component.html'
 })
 export class FormularioComponent implements OnInit {
 
   tipo:string="ingresoOperacion";
-  descripcionInput:string;
-  valorInput:number;
+  descripcionInput:string="";
+  valorInput:number=0;
 
   constructor(private ingresoService:IngresoService, private egresoService:EgresoService) { 
 
@@ -22,8 +21,8 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  tipoOperacion(evento) {
-    this.tipo = evento.target.value;
+  tipoOperacion(event : Event) {
+    this.tipo = (event.target as HTMLInputElement).value;
   }
 
   agregarValor() {
